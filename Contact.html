@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="stylesheet.css" rel="stylesheet">
+    <title>Web Portfolio</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navBar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>  
+        </nav>
+        <section class="firstContent">
+            <div class="container-sm d-flex justify-content-center">
+                <form class="row g-3 needs-validation" id="forms" novalidate>
+                <div class="row">
+                    <h1 class="text-center contentHeader">
+                        Message me
+                    </h1>
+                    <div class="mb-3 col-6">
+                        <label for="firstName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First name" required>
+                        <div class="valid-feedback">
+                            
+                        </div>
+                        <div class="invalid-feedback">
+                            Please fill in this field with your First Name.
+                        </div>
+                    </div>
+                    <div class="mb-3 col-6 extraPaddingtop">
+                        <label for="lastName" class="form-label"></label>    
+                        <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                        <div class="valid-feedback">
+                            
+                        </div>
+                        <div class="invalid-feedback">
+                            Please fill in this field with your Last Name.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="yourname@domain.com" required>
+                        <div class="valid-feedback">
+                            
+                        </div>
+                        <div class="invalid-feedback">
+                            Please fill in this field with your Email Address.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="10" placeholder="Sample text" required></textarea>
+                        <div class="valid-feedback">
+                            
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter a message in the textarea.
+                        </div>
+                    </div>
+                    <div class="container d-flex justify-content-center col-12">
+                    <button type="submit" class="btn btn-dark btn-lg">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="container" id="thankYou">
+                <h1 class="text-center contentHeader col-12">Thank You!</h1>
+                <p class="col-12 text-center">Your message has been submitted successfully.</p>
+            </div>
+        </section>
+        <section>
+            <div class="container d-flex about justify-content-center">
+                <div class="icon-padding">
+                <a href="https://www.github.com" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+                </a>
+                </div>
+                <div class="icon-padding">
+                <a href="https://www.google.com" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                    <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                </svg>
+                </a>
+                </div>
+                <div class="icon-padding">
+                <a href="https://www.fb.com" class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg>
+                </a>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+    <footer class="text-body-secondary">©2023 Keith San Andres. All rights reserved</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navBar {
+    text-align: center;
+    padding: 15px; }
+    .navBar a h2 {
+      font-size: 30px;
+      font-family: "Lato", sans-serif;
+      display: inline;
+      padding: 10px;
+      color: #b3b3b3; }
+
+.pageHeader {
+  background-image: url("Pic.JPG");
+  height: 95%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  display: block;
+  margin-top: -20px; }
+  .pageHeader .headerText {
+    width: 100%;
+    height: 50%;
+    text-align: center; }
+    .pageHeader .headerText h1 {
+      padding-top: 14%;
+      font-family: "Lato", sans-serif;
+      font-size: 90px; }
+    .pageHeader .headerText h2 {
+      font-size: 40px;
+      font-weight: 100; 
+      padding-bottom: 14%; }
+
+.about{
+    padding: 50px;
+}
+
+.contentHeader{
+  font-size: 40px;
+}
+
+.description{
+  font-size: 30px;
+}
+
+.icon-padding{
+  padding-left: 24px;
+}
+.firstContent{
+  padding: 100px;
+}
+.extraPaddingtop{
+  padding-top: 8px;
+}
+.hide{
+  display: none;
+}
+#thankYou{
+  display: none;
+}
+footer{
+  padding-left: 24px;
+  padding-bottom: 12px;
+}
